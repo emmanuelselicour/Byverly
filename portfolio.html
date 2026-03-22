@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Beverly Fleurisma</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bubble-container" id="bubbleContainer"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg" alt="Beverly Fleurisma Logo">
+                <span class="logo-text">Beverly<span class="highlight">Fleurisma</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content reveal-up">
+                <h1>Notre <span class="highlight-text">Portfolio</span></h1>
+                <p>Découvrez nos meilleures créations et réalisations</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons reveal-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="design">Design Graphique</button>
+                <button class="filter-btn" data-filter="impression">Impression</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="portfolio-masonry">
+                <div class="portfolio-item reveal-scale" data-category="impression" style="animation-delay: 0.1s">
+                    <img src="https://i.postimg.cc/52Shm8r2/IMG-20260207-WA0043.jpg" alt="Pochette téléphone personnalisée">
+                    <div class="portfolio-overlay">
+                        <h3>Pochette Téléphone</h3>
+                        <p>Personnalisation créative</p>
+                        <span class="portfolio-category">Impression</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="impression" style="animation-delay: 0.2s">
+                    <img src="https://i.postimg.cc/qhH1xmKY/IMG-20260207-WA0047.jpg" alt="Maillot personnalisé 1">
+                    <div class="portfolio-overlay">
+                        <h3>Maillot Sports</h3>
+                        <p>Impression textile premium</p>
+                        <span class="portfolio-category">Impression</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="impression" style="animation-delay: 0.3s">
+                    <img src="https://i.postimg.cc/bD03CQHs/IMG-20260207-WA0054.jpg" alt="Maillot personnalisé 2">
+                    <div class="portfolio-overlay">
+                        <h3>Maillot Équipe</h3>
+                        <p>Design personnalisé</p>
+                        <span class="portfolio-category">Impression</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="impression" style="animation-delay: 0.4s">
+                    <img src="https://i.postimg.cc/59zk3wYf/IMG-20260207-WA0044.jpg" alt="Calendrier personnalisé">
+                    <div class="portfolio-overlay">
+                        <h3>Calendrier 2024</h3>
+                        <p>Design sur mesure</p>
+                        <span class="portfolio-category">Impression</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="design" style="animation-delay: 0.5s">
+                    <img src="https://i.postimg.cc/cLCRDS9c/IMG-20260207-WA0026.jpg" alt="Flyer entreprise">
+                    <div class="portfolio-overlay">
+                        <h3>Flyer Entreprise</h3>
+                        <p>Communication professionnelle</p>
+                        <span class="portfolio-category">Design</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="branding" style="animation-delay: 0.6s">
+                    <img src="https://i.postimg.cc/rszJDCT9/la-coiffure-dun-client.jpg" alt="Coiffure client 1">
+                    <div class="portfolio-overlay">
+                        <h3>Service Coiffure</h3>
+                        <p>Résultat professionnel</p>
+                        <span class="portfolio-category">Services</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="branding" style="animation-delay: 0.7s">
+                    <img src="https://i.postimg.cc/6pFDtqdH/coifure-dun-client.jpg" alt="Coiffure client 2">
+                    <div class="portfolio-overlay">
+                        <h3>Coiffure Premium</h3>
+                        <p>Cliente satisfaite</p>
+                        <span class="portfolio-category">Services</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="design" style="animation-delay: 0.8s">
+                    <img src="https://i.postimg.cc/X7d5QDs8/travaille-de-nos-eleves-3.jpg" alt="Travail élève 3">
+                    <div class="portfolio-overlay">
+                        <h3>Travail d'Élève</h3>
+                        <p>Formation design</p>
+                        <span class="portfolio-category">Formation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="design" style="animation-delay: 0.9s">
+                    <img src="https://i.postimg.cc/6QzhW1RT/REPLACE-FIRST.jpg" alt="Projet design">
+                    <div class="portfolio-overlay">
+                        <h3>Projet Créatif</h3>
+                        <p>Design graphique</p>
+                        <span class="portfolio-category">Design</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="design" style="animation-delay: 1s">
+                    <img src="https://i.postimg.cc/kGFnt8yB/travaille-de-nos-eleves-2.jpg" alt="Travail élève 2">
+                    <div class="portfolio-overlay">
+                        <h3>Création Élève</h3>
+                        <p>Cours de design</p>
+                        <span class="portfolio-category">Formation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-scale" data-category="design" style="animation-delay: 1.1s">
+                    <img src="https://i.postimg.cc/x1XWwMbG/devoire-de-nos-eleves.jpg" alt="Devoir élève">
+                    <div class="portfolio-overlay">
+                        <h3>Devoir Créatif</h3>
+                        <p>Excellence en formation</p>
+                        <span class="portfolio-category">Formation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Témoignages</span>
+                <h2>Ce que disent <span class="highlight-text">nos clients</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-scale" style="animation-delay: 0.1s">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Excellent travail! Beverly a créé un logo parfait pour mon entreprise. Service rapide et professionnel."</p>
+                    <div class="testimonial-author">
+                        <strong>Jean-Marc D.</strong>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal-scale" style="animation-delay: 0.2s">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"La formation en design m'a permis de développer mes compétences. Les formateurs sont exceptionnels!"</p>
+                    <div class="testimonial-author">
+                        <strong>Marie L.</strong>
+                        <span>Étudiante en design</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal-scale" style="animation-delay: 0.3s">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Impression de qualité sur nos t-shirts d'équipe. Résultat au-delà de nos attentes!"</p>
+                    <div class="testimonial-author">
+                        <strong>Patrick S.</strong>
+                        <span>Coach sportif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal-up">
+                <h2>Votre projet mérite le meilleur</h2>
+                <p>Transformons vos idées en réalité</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Démarrer un projet</a>
+                    <a href="https://wa.me/50943413331" class="btn btn-whatsapp" target="_blank">
+                        <span class="whatsapp-icon">💬</span> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg" alt="Beverly Fleurisma">
+                        <span>Beverly Fleurisma</span>
+                    </div>
+                    <p>Studio créatif spécialisé en design graphique, impression et formation professionnelle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#design">Design Graphique</a></li>
+                        <li><a href="services.html#impression">Impression</a></li>
+                        <li><a href="services.html#formation">Formation</a></li>
+                        <li><a href="services.html#branding">Branding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 byverlyfleurisma@gmail.com</li>
+                        <li>📱 +509 43413331</li>
+                        <li><a href="https://wa.me/50943413331" target="_blank">💬 WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beverly Fleurisma. Tous droits réservés.</p>
+                <p class="footer-credit">Site created by <strong>E.S Company</strong> - Best UI DESIGN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Portfolio Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active from all
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active to clicked
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.classList.add('revealed');
+                        }, 100);
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('revealed');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

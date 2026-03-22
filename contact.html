@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Beverly Fleurisma</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bubble-container" id="bubbleContainer"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg" alt="Beverly Fleurisma Logo">
+                <span class="logo-text">Beverly<span class="highlight">Fleurisma</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-btn active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content reveal-up">
+                <h1>Contactez<span class="highlight-text">-nous</span></h1>
+                <p>Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Que vous ayez besoin d'un logo, d'une impression personnalisée ou d'une formation, nous sommes prêts à vous aider.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:byverlyfleurisma@gmail.com">byverlyfleurisma@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <a href="tel:+50943413331">+509 43413331</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/50943413331" target="_blank">Démarrer une conversation</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun-Ven: 8h00 - 18h00<br>Sam: 9h00 - 14h00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">📘</a>
+                            <a href="#" class="social-icon">📷</a>
+                            <a href="#" class="social-icon">🐦</a>
+                            <a href="https://wa.me/50943413331" target="_blank" class="social-icon">💬</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal-right">
+                    <form action="https://formspree.io/f/xkovzqpl" method="POST" class="contact-form" id="contactForm">
+                        <h3>Envoyez-nous un message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service souhaité *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="Design Graphique">Design Graphique</option>
+                                <option value="Impression Personnalisée">Impression Personnalisée</option>
+                                <option value="Formation">Formation Professionnelle</option>
+                                <option value="Branding & Marketing">Branding & Marketing</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="Moins de 5000 HTG">Moins de 5000 HTG</option>
+                                <option value="5000 - 10000 HTG">5000 - 10000 HTG</option>
+                                <option value="10000 - 20000 HTG">10000 - 20000 HTG</option>
+                                <option value="Plus de 20000 HTG">Plus de 20000 HTG</option>
+                                <option value="À discuter">À discuter</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet ou vos besoins..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>J'accepte de recevoir des informations sur les nouveautés et offres spéciales</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Envoyer le message
+                        </button>
+                        
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-actions">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Besoin d'une réponse <span class="highlight-text">rapide ?</span></h2>
+            </div>
+            
+            <div class="actions-grid">
+                <div class="action-card reveal-scale" style="animation-delay: 0.1s">
+                    <div class="action-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Discutez directement avec nous</p>
+                    <a href="https://wa.me/50943413331" class="btn btn-secondary" target="_blank">Ouvrir WhatsApp</a>
+                </div>
+                
+                <div class="action-card reveal-scale" style="animation-delay: 0.2s">
+                    <div class="action-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Envoyez-nous un email</p>
+                    <a href="mailto:byverlyfleurisma@gmail.com" class="btn btn-secondary">Envoyer un email</a>
+                </div>
+                
+                <div class="action-card reveal-scale" style="animation-delay: 0.3s">
+                    <div class="action-icon">📱</div>
+                    <h3>Appelez-nous</h3>
+                    <p>Parlons de votre projet</p>
+                    <a href="tel:+50943413331" class="btn btn-secondary">+509 43413331</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">FAQ</span>
+                <h2>Questions <span class="highlight-text">fréquentes</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item reveal-up" style="animation-delay: 0.1s">
+                    <h4>Quel est le délai de réalisation ?</h4>
+                    <p>Les délais varient selon le type de projet. Un logo simple prend 5-7 jours, tandis qu'une identité complète peut prendre 2-3 semaines. Nous offrons aussi des services express pour les urgences.</p>
+                </div>
+                
+                <div class="faq-item reveal-up" style="animation-delay: 0.2s">
+                    <h4>Proposez-vous des révisions ?</h4>
+                    <p>Oui ! Selon la formule choisie, vous bénéficiez de 1 à 3 révisions incluses. Pour les projets d'entreprise, les révisions sont illimitées.</p>
+                </div>
+                
+                <div class="faq-item reveal-up" style="animation-delay: 0.3s">
+                    <h4>Quels fichiers vais-je recevoir ?</h4>
+                    <p>Vous recevrez tous les formats nécessaires : PNG, JPG, PDF et fichiers sources (AI, PSD) selon le projet. Parfait pour l'impression et le web.</p>
+                </div>
+                
+                <div class="faq-item reveal-up" style="animation-delay: 0.4s">
+                    <h4>Comment fonctionne la formation ?</h4>
+                    <p>Nos formations combinent théorie et pratique avec des projets réels. Les cours sont disponibles en présentiel avec un accompagnement personnalisé.</p>
+                </div>
+                
+                <div class="faq-item reveal-up" style="animation-delay: 0.5s">
+                    <h4>Acceptez-vous les paiements en plusieurs fois ?</h4>
+                    <p>Oui, nous offrons des facilités de paiement pour les projets de plus grande envergure. Contactez-nous pour discuter des modalités.</p>
+                </div>
+                
+                <div class="faq-item reveal-up" style="animation-delay: 0.6s">
+                    <h4>Travaillez-vous avec des clients à distance ?</h4>
+                    <p>Absolument ! Nous collaborons avec des clients partout grâce aux outils digitaux. La distance n'est pas un obstacle à la créativité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://i.postimg.cc/s2vRDvnj/IMG-20260218-WA0057.jpg" alt="Beverly Fleurisma">
+                        <span>Beverly Fleurisma</span>
+                    </div>
+                    <p>Studio créatif spécialisé en design graphique, impression et formation professionnelle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#design">Design Graphique</a></li>
+                        <li><a href="services.html#impression">Impression</a></li>
+                        <li><a href="services.html#formation">Formation</a></li>
+                        <li><a href="services.html#branding">Branding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 byverlyfleurisma@gmail.com</li>
+                        <li>📱 +509 43413331</li>
+                        <li><a href="https://wa.me/50943413331" target="_blank">💬 WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beverly Fleurisma. Tous droits réservés.</p>
+                <p class="footer-credit">Site created by <strong>E.S Company</strong> - Best UI DESIGN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
